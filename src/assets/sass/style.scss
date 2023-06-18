@@ -1,0 +1,23 @@
+
+@import "config/variables";
+@import "config/layout";
+@import "config/colors";
+
+
+@import "utilites/spaceing";
+
+
+@import "base/fonts";
+@import "base/global";
+@import "base/typegaphy";
+@import "base/links";
+
+
+
+
+$background-color: rgb(79, 63, 63);
+
+
+body{
+    background-color: $background-color;
+}
