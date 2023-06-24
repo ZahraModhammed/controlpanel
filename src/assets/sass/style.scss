@@ -5,6 +5,7 @@
 
 
 @import "utilites/spaceing";
+@import "utilites/mixin-card.scss";
 
 
 @import "base/fonts";
@@ -12,10 +13,15 @@
 @import "base/typegaphy";
 @import "base/links";
 
+@import "components/_components";
+@import "components/demo.scss";
+@import "components/button.scss";
+@import "components/textfield.scss";
+@import "components/card.scss";
+@import "components/icon/style.scss";
 
 
-
-$background-color: rgb(79, 63, 63);
+$background-color: rgb(232, 220, 220);
 
 
 body{
