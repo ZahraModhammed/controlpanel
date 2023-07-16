@@ -1,6 +1,7 @@
 .C-tabs{
     @include e-card;
     width: 100%;
+    margin-top: spacing('normal');
 }
 
 .c-tabs__control{
