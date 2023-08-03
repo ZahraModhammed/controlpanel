@@ -1,9 +1,11 @@
+$container-horizontal-spacing: spacing("small");
+
 .C-list{
     display: flex;
     align-items: center;
     width: 100%;
     background: white;
-    padding: spacing("extea-small") spacing("small");
+    padding: spacing("extea-small")$container-horizontal-spacing;
     box-shadow: 0 0 0 3px rgba(black, 0.0);
 }
 
@@ -33,4 +35,30 @@
 
 .c-list--table-row{
     display: table-row;
+}
+
+// responsive
+
+@media (max-width:$bp-tablet-small){
+    .C-list{
+        flex-wrap: wrap;
+    }
+
+    .c-list__actions{
+        opacity: 1;
+        text-align: right;
+        margin-left: initial;
+        margin-right: 0;
+    }
+
+    .c-list__data:not(:first-of-type){
+        width: 100%;
+        padding-top: spacing('extea-small');
+        padding-bottom: spacing('extea-small');
+        border-top: 1px solid #f8f8f8;
+        margin-left: $container-horizontal-spacing;
+        margin-right: $container-horizontal-spacing;
+        padding-right: $container-horizontal-spacing;
+        padding-left: $container-horizontal-spacing;
+    }
 }

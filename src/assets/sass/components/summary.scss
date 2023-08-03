@@ -3,6 +3,7 @@
     display: inline-flex;
     align-items: center;
     padding: spacing("small") spacing("wide");
+    flex-wrap: wrap;
 
 }
 
@@ -44,4 +45,9 @@
         font-size: 13px;
         font-weight: normal;
     }
+}
+
+.c-summary--spaceless{
+    padding-left: 0;
+    padding-right: 0;
 }

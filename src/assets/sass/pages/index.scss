@@ -16,3 +16,22 @@
     flex-wrap: wrap;
 
 }
+
+
+@media(max-width:$bp-sidebar){
+    .page-container{
+        padding-right: $sidebar-width + spacing('small');
+    }
+
+    .home-intro{
+        margin: spacing('normal') 0 spacing('wide') ;
+    }
+
+    .welcome-tag{
+      font-size: 24px;
+    }
+
+    .main-page{
+        background: none;
+    }
+}
